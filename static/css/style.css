@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+}
+
+div {
+  padding-top: 1rem;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.trend {
+  width: 31vw;
+}
