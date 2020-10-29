@@ -85,9 +85,10 @@ app.get('/trending', async (req, res) => {
     const images = jsonResponse['data'];
     let payload = [];
 
-    images.forEach((image) => {
-      payload.push(image.images.downsized.url);
+    payload = images.map((image) => {
+      return image.images.downsized.url;
     });
+
     res.status(200);
     res.render('trending', { payload });
   } catch (err) {
